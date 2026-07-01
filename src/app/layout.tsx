@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Campionesi — Investimenti Immobiliari Milano',
+  title: 'Campionesi — Immobiliare Milano',
   description: 'Acquisiamo, ristrutturiamo e vendiamo immobili nel centro di Milano. Frazionamenti immobiliari, finiture di pregio, arredi italiani. Appartamenti pronti da vivere.',
   keywords: ['investimenti immobiliari milano', 'frazionamento immobiliare', 'ristrutturazione milano', 'appartamenti milano centro', 'immobili di pregio', 'case ristrutturate milano'],
   openGraph: {
-    title: 'Campionesi — Investimenti Immobiliari Milano',
+    title: 'Campionesi — Immobiliare Milano',
     description: 'Acquisiamo, ristrutturiamo e vendiamo immobili nel centro di Milano con finiture di pregio e arredi italiani.',
     url: 'https://www.campionesi.com',
     siteName: 'Campionesi',
