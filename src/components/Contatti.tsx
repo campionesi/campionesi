@@ -13,8 +13,19 @@ export default function Contatti() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
-    // Simula invio — sostituire con endpoint reale
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    const form = e.currentTarget
+    const data = {
+      nome: (form.elements.namedItem('nome') as HTMLInputElement).value,
+      cognome: (form.elements.namedItem('cognome') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      telefono: (form.elements.namedItem('telefono') as HTMLInputElement).value,
+      messaggio: (form.elements.namedItem('messaggio') as HTMLTextAreaElement).value,
+    }
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
     setLoading(false)
     setSubmitted(true)
   }
