@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   metadataBase: new URL('https://www.campionesi.com'),
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
