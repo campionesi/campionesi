@@ -39,19 +39,6 @@ export default function Hero() {
       <div className="relative z-10 section-padding w-full max-w-7xl mx-auto">
         <div className="max-w-2xl">
 
-          {/* Location badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex items-center gap-3 mb-10"
-          >
-            <div className="w-8 h-px bg-brand-oro" />
-            <span className="font-sans text-xs uppercase tracking-[0.25em] text-brand-oro font-medium">
-              Milano · Investimenti Immobiliari
-            </span>
-          </motion.div>
-
           {/* Headline */}
           <div className="overflow-hidden mb-4">
             <motion.h1
