@@ -41,8 +41,15 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Dati societari */}
+          <div className="pt-8 border-t border-white/10 mb-6">
+            <p className="text-xs font-sans text-white/30 leading-relaxed">
+              Campionesi S.r.l. &mdash; P.IVA 14366790963 &mdash; Viale Regina Margherita 39, 20122 Milano
+            </p>
+          </div>
+
           {/* Bottom */}
-          <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs font-sans text-white/40">
               &copy; {new Date().getFullYear()} Campionesi S.r.l. &mdash; Tutti i diritti riservati.
             </p>
