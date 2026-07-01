@@ -59,7 +59,7 @@ export default function Hero() {
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
               transition={{ duration: 0.9, delay: 0.85, ease: [0.16, 1, 0.3, 1] }}
-              className="font-serif text-2xl md:text-3xl lg:text-4xl font-light text-brand-oro italic"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl font-light text-brand-oro italic"
             >
               Li trasformiamo in case.
             </motion.p>
