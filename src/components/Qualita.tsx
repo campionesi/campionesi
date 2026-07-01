@@ -58,31 +58,33 @@ export default function Qualita() {
         <div className="border-t border-brand-beige-dark">
           {features.map((feat, i) => (
             <AnimatedSection key={feat.number} delay={i * 0.1}>
-              <motion.div
-                className="group grid grid-cols-[1fr_1fr] md:grid-cols-[1fr_1.2fr_6rem] items-center gap-6 md:gap-10 py-8 md:py-10 border-b border-brand-beige-dark cursor-default"
-                whileHover={{ x: 6 }}
-                transition={{ duration: 0.3, ease: 'easeOut' }}
-              >
-                {/* Title */}
-                <h3 className="font-serif text-xl md:text-2xl lg:text-3xl font-semibold text-brand-blu group-hover:text-brand-oro transition-colors duration-400 leading-tight">
-                  {feat.title}
-                </h3>
+              <div className="border-b border-brand-beige-dark">
+                <motion.div
+                  className="group grid grid-cols-[1fr_1fr] md:grid-cols-[1fr_1.2fr_6rem] items-center gap-6 md:gap-10 py-8 md:py-10 cursor-default"
+                  whileHover={{ x: 6 }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
+                >
+                  {/* Title */}
+                  <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-brand-blu group-hover:text-brand-oro transition-colors duration-400 leading-tight">
+                    {feat.title}
+                  </h3>
 
-                {/* Description */}
-                <p className="font-sans text-sm text-brand-blu/50 leading-relaxed hidden md:block">
+                  {/* Description */}
+                  <p className="font-sans text-base text-brand-blu/50 leading-relaxed hidden md:block">
+                    {feat.description}
+                  </p>
+
+                  {/* Tag */}
+                  <span className="hidden md:block font-sans text-xs uppercase tracking-[0.2em] text-brand-blu/30 group-hover:text-brand-oro/60 transition-colors duration-400 text-right">
+                    {feat.tag}
+                  </span>
+                </motion.div>
+
+                {/* Mobile description */}
+                <p className="md:hidden font-sans text-base text-brand-blu/50 leading-relaxed pb-4">
                   {feat.description}
                 </p>
-
-                {/* Tag */}
-                <span className="hidden md:block font-sans text-[10px] uppercase tracking-[0.2em] text-brand-blu/30 group-hover:text-brand-oro/60 transition-colors duration-400 text-right">
-                  {feat.tag}
-                </span>
-              </motion.div>
-
-              {/* Mobile description */}
-              <p className="md:hidden font-sans text-sm text-brand-blu/50 leading-relaxed pb-4 -mt-2">
-                {feat.description}
-              </p>
+              </div>
             </AnimatedSection>
           ))}
         </div>

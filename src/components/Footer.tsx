@@ -13,7 +13,7 @@ export default function Footer() {
               <Link href="/" className="font-serif text-2xl font-bold tracking-tight">
                 campionesi
               </Link>
-              <p className="text-sm font-sans text-white/50 mt-4 leading-relaxed max-w-xs">
+              <p className="text-base font-sans text-white/50 mt-4 leading-relaxed max-w-xs">
                 Investimenti immobiliari nel centro di Milano.
                 Acquisiamo, ristrutturiamo e vendiamo con finiture di pregio.
               </p>
@@ -23,17 +23,17 @@ export default function Footer() {
             <div>
               <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-brand-oro mb-6">Navigazione</h4>
               <div className="space-y-3">
-                <Link href="/#progetti" className="block text-sm font-sans text-white/60 hover:text-white transition-colors">Progetti</Link>
-                <Link href="/#approccio" className="block text-sm font-sans text-white/60 hover:text-white transition-colors">Chi Siamo</Link>
-                <Link href="/#qualita" className="block text-sm font-sans text-white/60 hover:text-white transition-colors">Qualità</Link>
-                <Link href="/#contatti" className="block text-sm font-sans text-white/60 hover:text-white transition-colors">Contatti</Link>
+                <Link href="/#progetti" className="block text-base font-sans text-white/60 hover:text-white transition-colors">Progetti</Link>
+                <Link href="/#approccio" className="block text-base font-sans text-white/60 hover:text-white transition-colors">Chi Siamo</Link>
+                <Link href="/#qualita" className="block text-base font-sans text-white/60 hover:text-white transition-colors">Qualità</Link>
+                <Link href="/#contatti" className="block text-base font-sans text-white/60 hover:text-white transition-colors">Contatti</Link>
               </div>
             </div>
 
             {/* Contatti */}
             <div>
               <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-brand-oro mb-6">Contatti</h4>
-              <div className="space-y-3 text-sm font-sans text-white/60">
+              <div className="space-y-3 text-base font-sans text-white/60">
                 <p>Milano, Italia</p>
                 <a href="mailto:info@campionesi.com" className="block hover:text-white transition-colors">info@campionesi.com</a>
                 <a href="tel:+393454636063" className="block hover:text-white transition-colors">+39 345 463 6063</a>

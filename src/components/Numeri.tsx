@@ -50,14 +50,14 @@ export default function Numeri() {
               transition={{ duration: 0.6, delay: i * 0.12, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
               <div className="border border-white/10 bg-white/5 px-6 py-7 text-left hover:border-brand-oro/30 transition-colors duration-500 group">
-                <p className="font-sans text-xs uppercase tracking-[0.18em] text-white/55 mb-4 group-hover:text-brand-oro/70 transition-colors duration-500">
+                <p className="font-sans text-sm uppercase tracking-[0.18em] text-white/55 mb-4 group-hover:text-brand-oro/70 transition-colors duration-500">
                   {stat.label}
                 </p>
-                <p className="font-serif text-4xl md:text-5xl font-light text-white leading-none mb-2">
+                <p className="font-serif text-5xl md:text-6xl font-light text-white leading-none mb-2">
                   <CountUp target={stat.value} />
                 </p>
                 <div className="w-6 h-px bg-brand-oro/40 mt-4 mb-3 group-hover:w-10 transition-all duration-500" />
-                <p className="font-sans text-sm text-white/50">
+                <p className="font-sans text-base text-white/50">
                   {stat.detail}
                 </p>
               </div>

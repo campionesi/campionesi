@@ -48,7 +48,7 @@ export default function Approccio() {
                   {s}
                 </h3>
 
-                <p className="font-sans text-sm md:text-base text-brand-blu/50 leading-relaxed mt-6 max-w-md mx-auto">
+                <p className="font-sans text-base md:text-lg text-brand-blu/50 leading-relaxed mt-6 max-w-md mx-auto">
                   {details[i]}
                 </p>
 
