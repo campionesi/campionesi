@@ -156,7 +156,7 @@ export const projects: Project[] = [
     indirizzo: 'Via Pinaroli, Milano',
     status: 'in-corso',
     statusLabel: 'In Corso',
-    description: 'Ristrutturazione integrale di un bilocale di 75 mq al primo piano in Porta Romana. I lavori sono in fase avanzata: impianti completamente rifatti, parquet in rovere a spina di pesce posato, cucina italiana installata. Consegna prevista settembre 2026, chiavi in mano e arredato.',
+    description: 'Ristrutturazione integrale di un bilocale di 75 mq al primo piano in Porta Romana. Intervento completo con finiture di alta qualità e arredi italiani su misura. L\'appartamento sarà consegnato chiavi in mano, pronto da vivere, entro settembre 2026.',
     shortDescription: 'Bilocale di 75 mq al 1° piano in Porta Romana — consegna settembre 2026.',
     mq: 75,
     locali: 'Bilocale',
