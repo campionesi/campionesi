@@ -149,7 +149,7 @@ export default function ProgettoClient({ project }: { project: Project | null })
                     <div className="flex items-center gap-4">
                       <DoorOpen size={18} className="text-brand-oro" />
                       <div>
-                        <span className="block text-xs font-sans text-brand-blu/50 uppercase tracking-wider">Locali</span>
+                        <span className="block text-xs font-sans text-brand-blu/50 uppercase tracking-wider">Tipologia</span>
                         <span className="text-sm font-sans font-medium">{project.locali}</span>
                       </div>
                     </div>
