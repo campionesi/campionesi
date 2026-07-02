@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowLeft, MapPin, Maximize2, DoorOpen, Building, Calendar, Check } from 'lucide-react'
+import { ArrowLeft, MapPin, Maximize2, DoorOpen, Building, Calendar, Check, Download } from 'lucide-react'
 import { Project } from '@/data/projects'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -175,6 +175,16 @@ export default function ProgettoClient({ project }: { project: Project | null })
                     >
                       Scrivi su WhatsApp
                     </a>
+                    {project.planimetria && (
+                      <a
+                        href={project.planimetria}
+                        download
+                        className="inline-flex items-center justify-center gap-2 w-full border border-brand-oro text-brand-oro px-8 py-4 text-sm font-sans font-medium uppercase tracking-wider hover:bg-brand-oro hover:text-white transition-all duration-300"
+                      >
+                        <Download size={16} />
+                        Scarica Planimetria
+                      </a>
+                    )}
                   </div>
                 </div>
               </AnimatedSection>

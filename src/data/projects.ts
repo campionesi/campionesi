@@ -16,6 +16,7 @@ export interface Project {
   unita: number
   consegna?: string
   personalizzabile?: boolean
+  planimetria?: string
   finiture: string[]
   images: string[]
   hero: string
@@ -147,6 +148,7 @@ export const projects: Project[] = [
   // ── IN CORSO ───────────────────────────────────────────────
   {
     slug: 'via-pinaroli',
+    planimetria: '/planimetria-via-pinaroli.pdf',
     title: 'Via Pinaroli',
     zona: 'Porta Romana',
     indirizzo: 'Via Pinaroli, Milano',
@@ -168,7 +170,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'via-botta',
-  personalizzabile: true,
+    planimetria: '/planimetria-via-botta.pdf',
+    personalizzabile: true,
     title: 'Via Botta',
     zona: 'Porta Romana',
     indirizzo: 'Via Botta, Milano',
@@ -189,7 +192,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'via-bergamo',
-  personalizzabile: true,
+    planimetria: '/planimetria-via-bergamo.pdf',
+    personalizzabile: true,
     title: 'Via Bergamo',
     zona: 'Porta Romana',
     indirizzo: 'Via Bergamo, Milano',
@@ -211,7 +215,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'via-maj',
-  personalizzabile: true,
+    planimetria: '/planimetria-via-maj.pdf',
+    personalizzabile: true,
     title: 'Via Maj',
     zona: 'Porta Romana',
     indirizzo: 'Via Maj, Milano',
@@ -233,7 +238,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'via-reina',
-  personalizzabile: true,
+    planimetria: '/planimetria-via-reina.pdf',
+    personalizzabile: true,
     title: 'Via Reina',
     zona: 'Susa',
     indirizzo: 'Via Reina, Milano',
