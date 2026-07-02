@@ -17,6 +17,7 @@ export interface Project {
   consegna?: string
   personalizzabile?: boolean
   planimetria?: string
+  renders?: string[]
   finiture: string[]
   images: string[]
   hero: string
@@ -149,6 +150,7 @@ export const projects: Project[] = [
   {
     slug: 'via-pinaroli',
     planimetria: '/planimetria-via-pinaroli.pdf',
+    renders: ['/pinaroli-1.png', '/pinaroli-2.png', '/pinaroli-3.png', '/pinaroli-4.png'],
     title: 'Via Pinaroli',
     zona: 'Porta Romana',
     indirizzo: 'Via Pinaroli, Milano',

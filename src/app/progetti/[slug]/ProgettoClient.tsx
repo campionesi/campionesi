@@ -93,6 +93,23 @@ export default function ProgettoClient({ project }: { project: Project | null })
                 <p className="body-text mb-12">{project.description}</p>
               </AnimatedSection>
 
+              {project.renders && project.renders.length > 0 && (
+                <AnimatedSection delay={0.15}>
+                  <h3 className="font-serif text-2xl font-semibold mb-8">Render del progetto</h3>
+                  <div className="grid grid-cols-2 gap-3 mb-12">
+                    {project.renders.map((src, i) => (
+                      <div key={i} className="overflow-hidden aspect-[4/3] bg-brand-beige">
+                        <img
+                          src={src}
+                          alt={`Render ${i + 1} — ${project.title}`}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </AnimatedSection>
+              )}
+
               <AnimatedSection delay={0.2}>
                 <h3 className="font-serif text-2xl font-semibold mb-8">Finiture e Materiali</h3>
                 <div className="grid sm:grid-cols-2 gap-3">

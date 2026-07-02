@@ -106,25 +106,10 @@ export default function Progetti() {
             <span className="text-brand-oro">una trasformazione.</span>
           </h2>
           <p className="body-text max-w-2xl mb-20">
-            Dai progetti completati a quelli in fase di realizzazione.
+            Dai progetti in corso a quelli completati.
             Ogni intervento racconta il nostro modo di lavorare.
           </p>
         </AnimatedSection>
-
-        {/* Completati */}
-        <AnimatedSection>
-          <div className="flex items-center gap-5 mb-8">
-            <span className="font-serif text-2xl md:text-3xl font-semibold text-brand-blu">Completati</span>
-            <div className="flex-1 h-px bg-brand-beige-dark" />
-            <span className="font-serif text-xl text-brand-blu/30">{completati.length}</span>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
-          {completati.map((project, i) => (
-            <ProjectCard key={project.slug} project={project} index={i} />
-          ))}
-        </div>
 
         {/* In Corso */}
         <AnimatedSection>
@@ -135,8 +120,23 @@ export default function Progetti() {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
           {inCorso.map((project, i) => (
+            <ProjectCard key={project.slug} project={project} index={i} />
+          ))}
+        </div>
+
+        {/* Completati */}
+        <AnimatedSection>
+          <div className="flex items-center gap-5 mb-8">
+            <span className="font-serif text-2xl md:text-3xl font-semibold text-brand-blu">Completati</span>
+            <div className="flex-1 h-px bg-brand-beige-dark" />
+            <span className="font-serif text-xl text-brand-blu/30">{completati.length}</span>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {completati.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
           ))}
         </div>
