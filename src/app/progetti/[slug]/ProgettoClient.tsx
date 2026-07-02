@@ -87,7 +87,7 @@ export default function ProgettoClient({ project }: { project: Project | null })
           <div className="grid lg:grid-cols-3 gap-16">
 
             {/* Main content */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <AnimatedSection>
                 <h2 className="heading-section mb-6">Il Progetto</h2>
                 <p className="body-text mb-12">{project.description}</p>
@@ -124,7 +124,7 @@ export default function ProgettoClient({ project }: { project: Project | null })
             </div>
 
             {/* Sidebar */}
-            <div>
+            <div className="order-1 lg:order-2">
               <AnimatedSection delay={0.15}>
                 <div className="bg-brand-beige p-8 sticky top-28">
                   {project.personalizzabile && (
