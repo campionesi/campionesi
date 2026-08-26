@@ -107,7 +107,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'via-friuli',
-    title: 'Via Friuli 14',
+    title: 'Via Friuli',
     zona: 'Porta Vittoria',
     indirizzo: 'Via Friuli 14, Milano',
     status: 'completato',
