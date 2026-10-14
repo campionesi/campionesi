@@ -31,6 +31,11 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                   Personalizzabile
                 </span>
               )}
+            {isCompletato && (
+                <span className="inline-block px-2 py-1 text-[10px] font-sans font-medium uppercase tracking-wider bg-white/10 text-white/60 border border-white/20">
+                  Venduto
+                </span>
+              )}
             </div>
 
             {/* Project number */}
