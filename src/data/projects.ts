@@ -218,6 +218,7 @@ export const projects: Project[] = [
   {
     slug: 'via-maj',
     planimetria: '/planimetria-via-maj.pdf',
+    renders: ['/maj-1.png', '/maj-2.png', '/maj-3.png', '/maj-4.png', '/maj-5.png', '/maj-6.png', '/maj-7.png'],
     personalizzabile: true,
     title: 'Via Maj',
     zona: 'Porta Romana',
