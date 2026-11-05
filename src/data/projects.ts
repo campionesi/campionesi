@@ -173,7 +173,6 @@ export const projects: Project[] = [
   {
     slug: 'via-botta',
     planimetria: '/planimetria-via-botta.pdf',
-    personalizzabile: true,
     title: 'Via Botta',
     zona: 'Porta Romana',
     indirizzo: 'Via Botta, Milano',
@@ -242,7 +241,6 @@ export const projects: Project[] = [
   {
     slug: 'via-reina',
     planimetria: '/planimetria-via-reina.pdf',
-    personalizzabile: true,
     title: 'Via Reina',
     zona: 'Susa',
     indirizzo: 'Via Reina, Milano',
