@@ -116,7 +116,7 @@ export default function Hero() {
           <p className="font-sans text-sm uppercase tracking-[0.2em] text-white/65 mb-4">
             In consegna
           </p>
-          <p className="font-serif text-5xl font-bold text-white leading-none">8</p>
+          <p className="font-serif text-5xl font-bold text-white leading-none">6</p>
           <p className="font-sans text-sm text-white/60 mt-2">nuovi appartamenti</p>
           <div className="mt-5 w-full h-px bg-brand-oro/30" />
           <p className="font-sans text-xs uppercase tracking-[0.2em] text-white/40 mt-5 mb-3">
