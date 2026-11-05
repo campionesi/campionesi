@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion'
 const stats = [
   { label: 'Appartamenti venduti', value: 16, detail: 'dal 2024 ad oggi' },
   { label: 'Progetti completati', value: 8, detail: 'operazioni concluse' },
-  { label: 'Progetti in corso', value: 5, detail: 'attualmente in cantiere' },
+  { label: 'Progetti in corso', value: 3, detail: 'attualmente in cantiere' },
   { label: 'In consegna', value: 6, detail: 'nuovi appartamenti' },
 ]
 
